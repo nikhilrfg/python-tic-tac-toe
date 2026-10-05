@@ -1,0 +1,68 @@
+                    START
+                      │
+                      ▼
+              Create board 1-9
+                      │
+                      ▼
+               Put X in center
+                      │
+                      ▼
+              Find free squares
+                      │
+                      ▼
+              human_turn = True
+                      │
+                      ▼
+                Display board
+                      │
+                      ▼
+              Is it human turn?
+                 /          \
+               YES          NO
+                │            │
+                ▼            ▼
+           Ask for move   Find free
+                │         squares
+                ▼            │
+           Put O on           ▼
+             board       Random choice
+                │            │
+                ▼            ▼
+          Did O win?     Put X on board
+                │            │
+                │            ▼
+                │        Did X win?
+                │            │
+                └─────┬──────┘
+                      │
+                      ▼
+               Someone won?
+                 /        \
+               YES        NO
+                │          │
+                ▼          ▼
+              BREAK    Switch turn
+                           │
+                           ▼
+                    Update free list
+                           │
+                           │
+                           └──────────┐
+                                      │
+                           Display board again
+                                      │
+                                      ▼
+
+                    When game finishes
+                           │
+                           ▼
+                   Display final board
+                           │
+                           ▼
+                    Check `victor`
+                     /     |      \
+                    /      |       \
+                 "you"    "me"     None
+                   │        │        │
+                   ▼        ▼        ▼
+               You won!   I won     Tie!
